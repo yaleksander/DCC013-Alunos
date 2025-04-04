@@ -26,7 +26,7 @@ int lerNumero()
  */
 	int x = 0;
 	int n = s.length();
-	if (n > 6) // tamanho máximo arbitrário
+	if (n == 0 || n > 6) // tamanho máximo arbitrário
 		return -100000; // a flag precisa estar fora do escopo de números aceitáveis
 	for (int i = ((s[0] == '-') ? 1 : 0); i < n; i++)
 	{
@@ -82,14 +82,8 @@ int main()
 		{
 			case 1:
 				cout << "Digite o valor do no (numero inteiro): ";
-				op = filtrarEntrada();
-				if (arv->busca(op) != NULL)
-					cout << "Valor ja existe na arvore. Insercao cancelada. Pressione ENTER para continuar.";
-				else
-				{
-					arv->insere(op);
-					cout << "Insercao realizada com sucesso. Pressione ENTER para continuar.";
-				}
+				arv->insere(filtrarEntrada());
+				cout << "Insercao realizada com sucesso. Pressione ENTER para continuar.";
 				lerNumero();
 				break;
 
