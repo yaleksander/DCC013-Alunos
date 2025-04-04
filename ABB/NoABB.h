@@ -11,6 +11,7 @@ class NoABB
 
 	public:
 
+		// resolver no quadro primeiro
 		NoABB(int valor);
 		~NoABB();
 		int getValor();
@@ -19,10 +20,14 @@ class NoABB
 		void setValor(int valor);
 		void setEsq(NoABB* no);
 		void setDir(NoABB* no);
+
+		// exercícios
 		void insere(int valor);
 		NoABB* busca(int valor);
-		void imprimeOrdenado();
-		void imprimePorNivel(int n);
+		void imprimeOrdemCrescente();
+		void imprimeVisualizacao(int n);
+
+		// resolver no quadro por último
 		NoABB* remove(NoABB* no, int valor);
 };
 

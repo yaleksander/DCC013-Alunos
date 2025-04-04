@@ -27,7 +27,7 @@ int lerNumero()
 int filtrarEntrada()
 {
 	int n = lerNumero();
-	while (n == 0)
+	while (n == -100000)
 	{
 		cout << "Numero invalido. Tente novamente: ";
 		n = lerNumero();
@@ -46,13 +46,13 @@ int main()
 	while (true)
 	{
 		cout << "\033[2J\033[1;1H";
-		arv->imprime();
+		arv->imprimeEmLargura();
 		cout << endl << "Selecione uma operacao:" << endl;
 		cout << " 1: Inserir no" << endl;
 		cout << " 2: Buscar valor" << endl;
 		cout << " 3: Remover no" << endl;
-		cout << " 4: Imprimir por nivel" << endl;
-		cout << " 5: Imprimir em ordem" << endl;
+		cout << " 4: Imprimir visualizacao" << endl;
+		cout << " 5: Imprimir ordem crescente" << endl;
 		cout << " 6: Destruir arvore" << endl;
 		cout << " 7: Encerrar o programa" << endl;
 		cout << endl << "Digite o numero correspondente: ";
@@ -99,14 +99,14 @@ int main()
 
 			case 4:
 				cout << endl;
-				arv->imprimePorNivel();
+				arv->imprimeVisualizacao();
 				cout << endl << "Pressione ENTER para continuar.";
 				lerNumero();
 				break;
 
 			case 5:
 				cout << endl;
-				arv->imprimeOrdenado();
+				arv->imprimeOrdemCrescente();
 				cout << endl << "Pressione ENTER para continuar.";
 				lerNumero();
 				break;

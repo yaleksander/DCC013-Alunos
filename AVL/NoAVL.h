@@ -22,8 +22,8 @@ class NoAVL
 		void setEsq(NoAVL* no);
 		void setDir(NoAVL* no);
 		NoAVL* busca(int valor);
-		void imprimeOrdenado();
-		void imprimePorNivel(int n);
+		void imprimeOrdemCrescente();
+		void imprimeVisualizacao(int n);
 
 		// funções novas/atualizadas
 		void atualizaAltura();

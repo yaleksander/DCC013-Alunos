@@ -17,9 +17,9 @@ class ABB
 		void insere(int valor);
 		NoABB* busca(int valor);
 		void remove(int valor);
-		void imprime();
-		void imprimeOrdenado();
-		void imprimePorNivel();
+		void imprimeEmLargura();
+		void imprimeOrdemCrescente();
+		void imprimeVisualizacao();
 		void destroiArvore();
 };
 

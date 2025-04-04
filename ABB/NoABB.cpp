@@ -48,7 +48,7 @@ void NoABB::setDir(NoABB* no)
 
 void NoABB::insere(int valor)
 {
-	// lembrando que não são permitidos nós com chaves/valores iguais em ABBs
+	// ...
 }
 
 NoABB* NoABB::busca(int valor)
@@ -61,12 +61,18 @@ NoABB* NoABB::remove(NoABB* no, int valor)
 	// ...
 }
 
-void NoABB::imprimeOrdenado()
+void NoABB::imprimeOrdemCrescente()
 {
 	// ...
 }
 
-void NoABB::imprimePorNivel(int n)
+void NoABB::imprimeVisualizacao(int n)
 {
-	// ...
+	for (int i = 0; i < n; i++)
+		cout << "--";
+	cout << "(" << this->valor << ")" << endl;
+	if (this->esq != NULL)
+		this->esq->imprimeVisualizacao(n + 1);
+	if (this->dir != NULL)
+		this->dir->imprimeVisualizacao(n + 1);
 }

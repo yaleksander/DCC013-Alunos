@@ -41,30 +41,33 @@ void ABB::remove(int valor)
 		this->raiz = this->raiz->remove(this->raiz, valor);
 }
 
-void ABB::imprime()
+void ABB::imprimeEmLargura()
 {
 	if (!this->vazia())
 	{
 		NoLSE* lista = new NoLSE(this->raiz);
-
-		// ...
-
+		for (NoLSE* p = lista; p != NULL; p = p->getProx())
+		{
+			cout << p->getNo()->getValor() << ", ";
+			p->insere(p->getNo()->getEsq());
+			p->insere(p->getNo()->getDir());
+		}
 		delete lista;
 	}
 	cout << "\b\b  " << endl;
 }
 
-void ABB::imprimeOrdenado()
+void ABB::imprimeOrdemCrescente()
 {
 	if (!this->vazia())
-		this->raiz->imprimeOrdenado();
+		this->raiz->imprimeOrdemCrescente();
 	cout << "\b\b  " << endl;
 }
 
-void ABB::imprimePorNivel()
+void ABB::imprimeVisualizacao()
 {
 	if (!this->vazia())
-		this->raiz->imprimePorNivel(0);
+		this->raiz->imprimeVisualizacao(0);
 }
 
 void ABB::destroiArvore()

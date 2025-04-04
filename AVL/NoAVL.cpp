@@ -71,14 +71,20 @@ NoAVL* NoAVL::remove(NoAVL* no, int valor)
 	return no->corrige(no);
 }
 
-void NoAVL::imprimeOrdenado()
+void NoAVL::imprimeOrdemCrescente()
 {
 	// igual à ABB
 }
 
-void NoAVL::imprimePorNivel(int n)
+void NoAVL::imprimeVisualizacao(int n)
 {
-	// igual à ABB
+	for (int i = 0; i < n; i++)
+		cout << "--";
+	cout << "(" << this->valor << ")" << endl;
+	if (this->esq != NULL)
+		this->esq->imprimeVisualizacao(n + 1);
+	if (this->dir != NULL)
+		this->dir->imprimeVisualizacao(n + 1);
 }
 
 void NoAVL::atualizaAltura()

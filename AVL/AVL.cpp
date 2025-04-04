@@ -41,7 +41,7 @@ void AVL::remove(int valor)
 		this->raiz = this->raiz->remove(this->raiz, valor);
 }
 
-void AVL::imprime()
+void AVL::imprimeEmLargura()
 {
 	if (!this->vazia())
 	{
@@ -57,17 +57,17 @@ void AVL::imprime()
 	cout << "\b\b  " << endl;
 }
 
-void AVL::imprimeOrdenado()
+void AVL::imprimeOrdemCrescente()
 {
 	if (!this->vazia())
-		this->raiz->imprimeOrdenado();
+		this->raiz->imprimeOrdemCrescente();
 	cout << "\b\b  " << endl;
 }
 
-void AVL::imprimePorNivel()
+void AVL::imprimeVisualizacao()
 {
 	if (!this->vazia())
-		this->raiz->imprimePorNivel(0);
+		this->raiz->imprimeVisualizacao(0);
 }
 
 void AVL::destroiArvore()
