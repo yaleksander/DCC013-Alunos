@@ -129,8 +129,6 @@ NoVP* NoVP::corrigeInsercao()
 
 NoVP* NoVP::corrigeRemocao(NoVP* velho, NoVP* novo)
 {
-	// https://medium.com/analytics-vidhya/deletion-in-red-black-rb-tree-92301e1474ea
-	// https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
 	NoVP* p = velho;
 	if (novo != NULL)
 	{
