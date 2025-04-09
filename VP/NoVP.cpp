@@ -129,6 +129,8 @@ NoVP* NoVP::corrigeInsercao()
 
 NoVP* NoVP::corrigeRemocao(NoVP* velho, NoVP* novo)
 {
+	// tabela com os 6 casos p/ corrigir a árvore após uma remoção:
+	// https://medium.com/analytics-vidhya/deletion-in-red-black-rb-tree-92301e1474ea
 	NoVP* p = velho;
 	if (novo != NULL)
 	{
