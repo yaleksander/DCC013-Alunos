@@ -343,3 +343,8 @@ void NoVP::imprimeVisualizacao(int n)
 	if (this->dir != NULL)
 		this->dir->imprimeVisualizacao(n + 1);
 }
+
+int NoVPgetAlturaNegra()
+{
+	// ...
+}

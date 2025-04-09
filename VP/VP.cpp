@@ -75,3 +75,10 @@ void VP::destroiArvore()
 	delete this->raiz;
 	this->raiz = NULL;
 }
+
+int VP::getAlturaNegra()
+{
+	if (this->vazia())
+		return 0;
+	return this->raiz->getAlturaNegra();
+}

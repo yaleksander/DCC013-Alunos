@@ -37,6 +37,9 @@ class NoVP
 		NoVP* remove(int valor);
 		void imprimeOrdemCrescente();
 		void imprimeVisualizacao(int n);
+
+		// exercício p/ casa
+		int getAlturaNegra();
 };
 
 #endif

@@ -21,6 +21,7 @@ class VP
 		void imprimeOrdemCrescente();
 		void imprimeVisualizacao();
 		void destroiArvore();
+		int getAlturaNegra();
 };
 
 #endif
