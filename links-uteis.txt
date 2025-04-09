@@ -1,0 +1,10 @@
+Material didático base
+https://sites.google.com/view/dcc013
+
+AVL
+https://www.canva.com/design/DAGj-9E1diw/e-UqzD0_YVAgUOrDGzwkMw/edit?utm_content=DAGj-9E1diw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+https://www.w3schools.com/dsa/dsa_data_avltrees.php
+
+Vermelho-preto
+https://www.geeksforgeeks.org/insertion-in-red-black-tree/
+https://medium.com/analytics-vidhya/deletion-in-red-black-rb-tree-92301e1474ea
