@@ -54,10 +54,11 @@ int main()
 		cout << " 4: Imprimir visualizacao" << endl;
 		cout << " 5: Imprimir ordem crescente" << endl;
 		cout << " 6: Destruir arvore" << endl;
-		cout << " 7: Encerrar o programa" << endl;
+		cout << " 7: Imprimir a altura negra da arvore" << endl;
+		cout << " 8: Encerrar o programa" << endl;
 		cout << endl << "Digite o numero correspondente: ";
 		op = lerNumero();
-		while (op < 1 || op > 7)
+		while (op < 1 || op > 8)
 		{
 			cout << "Operacao invalida. Tente novamente: ";
 			op = lerNumero();
@@ -112,10 +113,15 @@ int main()
 				lerNumero();
 				break;
 
+			case 7:
+				cout << "Altura negra da arvore: " << arv->getAlturaNegra() << "." << endl << "Pressione ENTER para continuar.";
+				lerNumero();
+				break;
+
 			default:
 				break;
 		}
-		if (op == 7)
+		if (op == 8)
 			break;
 	}
 	return 0;
